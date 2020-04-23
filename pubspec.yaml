@@ -1,0 +1,95 @@
+name: seedproject
+description: A new Flutter project.
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^0.1.2
+
+  firebase_auth: ^0.16.0  # Firebase 인증 패키지
+  # cloud_firestore: ^0.13.5  # Firebase 의 자료기지와 클라우드 관리를 위한 패키지
+  google_sign_in: ^4.4.2    # 구글 인증
+  firebase_storage: ^3.1.5  # Firebase에 파일 업로드하기 위한 패키지
+  firebase_messaging: ^6.0.13   # push notification 관련 패키지
+
+  geolocator: ^5.3.1       # 구글 자기위치 측정하는 패키지
+  uuid: ^2.0.4             # 유일식별번호 얻는 패키지
+  path_provider: ^1.6.5     # 앱에서 각종 경로 얻는 패키지
+  provider: ^4.0.5    # 자료기반 동기화를 지원하는 패키지
+  get_it: ^4.0.1      # 위젯과 클라스를 분리하여 리용하도록 지원하는 패키지
+  http: ^0.12.0+4     # Http 요청 패키지
+  stacked: ^1.1.0     # 함수 및 변수관리는 지원하는 패키지
+  async: ^2.4.0       # 취소가능한 조작수행을 지원하는 패키지
+
+  cached_network_image: ^2.1.0+1  # 이미지를 완충하여 읽어내는 패키지
+  image_picker: ^0.6.5      # 이미지를 갤러리나 사진기로부터 얻는 패키지  
+  # image: ^2.1.12            # 이미지 처리 패키지
+  # chewie: ^0.9.10         # 비데오 플레이어(콘트롤러 포함)
+  # video_player: ^0.10.8+1 # 비데오 플레이어(초기)
+  font_awesome_flutter: ^8.8.1    # 폰트(특수문자 포함)
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/title.png
+    - assets/images/icon_large.png
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.io/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.io/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: Open Sans
+      fonts:
+        - asset: assets/fonts/OpenSans-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/OpenSans-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/OpenSans-Light.ttf
+          weight: 300
+        - asset: assets/fonts/OpenSans-Regular.ttf
+          weight: 400
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.io/custom-fonts/#from-packages
